@@ -37,6 +37,8 @@ build-license-version3 = ["ffmpeg-sys-next/build-license-version3"]
 # misc
 build-pic  = ["ffmpeg-sys-next/build-pic"]
 build-zlib = ["ffmpeg-sys-next/build-zlib"]
+build-nvenc = ["ffmpeg-sys-next/build-nvenc"]
+build-vaapi = ["ffmpeg-sys-next/build-vaapi"]
 
 # ssl
 build-lib-gnutls  = ["ffmpeg-sys-next/build-lib-gnutls"]
@@ -113,5 +115,5 @@ version  = "0.23"
 optional = true
 
 [dependencies.ffmpeg-sys-next]
-version = "5.1.1"
+path = "../rust-ffmpeg-sys/"
 default-features = false
